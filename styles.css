@@ -20,6 +20,10 @@ header, footer{
     justify-content: space-between;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
 
 ul {
     list-style-type: none;
@@ -28,6 +32,7 @@ ul {
     overflow: hidden;
     background-color: #1F2937;
     color: white;
+    text-decoration: none;
 }
 
 li {
@@ -41,15 +46,29 @@ li {
     background-color: #1F2937;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+     gap: 20px;
 }
 
 .block {
-    flex: 1 1 50%;
+    flex: 1, 0, auto;
     /* width: 600px; */
-    min-width: 300px;
+    min-width: 800px;
     text-align: center;
+    padding: 20px;
+}
+
+.title .block {
+    border: white solid 2px;
+    border-radius: 25px;
+}
+
+.booknow .block {
+    background-color: #3882f6;
+    color: #f9f9f9;
+    border-radius: 100px;
+    display: flex;
 }
 
 .info {
@@ -90,17 +109,30 @@ h3 {
 }
 
 .booknow {
-    background-color: #1F2937;
-    color: white;
+    background-color: #f9f9f9;
+    color: #1F2937;
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 1;
-    min-height: 200px;
+    min-height: 250px;
     text-align: center;
     /* padding: 20px; */
     /* margin: 20px; */
+}
+
+.book {
+    flex: 1 1 50%;
+    background-color: #3882f6;
+    color: black;
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 20px;
 }
 
 .book-button {
@@ -110,9 +142,12 @@ h3 {
     font-weight: 900;
     padding: 10px;
     text-decoration: none   ;
-    border: none;
+    border: #1F2937 solid 2px;
     cursor: pointer;
     border-radius: 25px;
+    flex: 1 1 50%;
+    max-height: min-content;
+    align-self: center;
     /* position: absolute; */
     /* top: 50%; */
     &:hover {
@@ -142,8 +177,9 @@ img {
     background-color: #f9f9f9;
     color: #1F2937;
     border: #1F2937 solid 2px;
+    text-align: center;
     border-radius: 25px;
-    font-size: 24px;
+    font-size: 30px;
     max-height: 200px;
     /* max-width: 200px; */
     padding: 20px;
@@ -153,4 +189,11 @@ img {
     /* display: flex; */
     /* justify-content: center; */
     /* align-items: center; */
+}
+
+img {
+    width: 300px;
+    height: auto;
+    border-radius: 25px;
+    flex: 0, 0, 100%;
 }
